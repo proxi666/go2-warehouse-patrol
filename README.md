@@ -88,7 +88,7 @@ Open **http://127.0.0.1:8126/**. Add `--no-headless` to the patrol command for a
 
 ## Validation and scope
 
-The recorded demonstration completed all aisle inspections: two aisles clear, one obstruction confirmed from two camera views, an operator notice issued, and Go2 returned to parking. Independent evidence verification and the CPU test suite passed. [Recorded results](docs/LATEST_SHOWCASE_RUN.json).
+The recorded demonstration completed all aisle inspections: two aisles clear, one obstruction confirmed from two camera views, an operator notice issued, and Go2 returned to parking. Independent evidence verification and the CPU test suite passed. [Recorded laptop results](docs/LATEST_SHOWCASE_RUN.json). A separate RTX 5090 run also passed independent verification after improving waypoint settling; see [remote GPU results](docs/REMOTE_GPU_RUN.json).
 
 This is a simulation PoC with known robot poses, an ideal virtual camera, and one staged obstruction. General perception accuracy and real-robot deployment remain unverified. Selected SimReady checks passed; full SimReady certification is not claimed.
 

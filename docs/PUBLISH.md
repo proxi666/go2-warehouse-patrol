@@ -30,3 +30,7 @@ README thumbnails open the GitHub Pages video gallery with native HTML video con
 Public GitHub publication is authorized. LinkedIn posting is a separate action; the repository includes a draft, but no LinkedIn post or message has been sent.
 
 Native runtime acceptance, CPU tests, and unverified real-world/generalization work remain separate. See [recorded results](LATEST_SHOWCASE_RUN.json) and [media provenance](../media/PROVENANCE.json).
+
+GitHub Pages gallery playback was checked in a real browser: all six videos loaded, played, advanced, and sought near their end; mobile layout and video MIME types passed. See `MEDIA_PLAYBACK.json`.
+
+Remote RTX 5090 qualification passed after the arrival-settling repair; the CPU suite contains 150 passing tests. Previous failed native evidence remains separate, and historical laptop footage is unchanged. See `REMOTE_GPU_RUN.json`.

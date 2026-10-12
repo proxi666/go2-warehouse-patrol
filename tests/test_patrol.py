@@ -215,4 +215,17 @@ class DashboardTests(unittest.TestCase):
         with self.assertRaises(urllib.error.HTTPError) as ctx:urllib.request.urlopen(req)
         self.assertEqual(ctx.exception.code,501)
 
+
+class ArrivalHysteresisTests(unittest.TestCase):
+    def test_enter_inside_acceptance_then_hold_through_small_drift(self):
+        from warehouse_incident.patrol import settling_arrival
+        target=(-3.5,12.8,0.)
+        # Recorded server edge pose must keep moving before a settling latch.
+        edge=(-3.651724,12.605147,.054638)
+        self.assertFalse(settling_arrival(edge,target,.25,False))
+        self.assertTrue(settling_arrival((-3.6,12.7,.04),target,.25,False))
+        self.assertTrue(settling_arrival(edge,target,.25,True))
+        self.assertFalse(settling_arrival((-3.7,12.6,.04),target,.25,True))
+        self.assertFalse(settling_arrival((-3.6,12.7,.2),target,.25,True))
+
 if __name__=='__main__':unittest.main()

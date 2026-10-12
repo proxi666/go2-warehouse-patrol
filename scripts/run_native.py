@@ -276,14 +276,14 @@ def main():
         client=None
         patrol=None
         if args.mode=='patrol':
-            from warehouse_incident.patrol import Patrol
+            from warehouse_incident.patrol import Patrol,settling_arrival
             patrol=Patrol(config)
         if args.mode in ('demo','patrol'):
             from warehouse_incident.cosmos import CosmosClient
             client=CosmosClient(endpoint=args.endpoint or config['cosmos_endpoint'],task='patrol' if args.mode=='patrol' else 'incident');result['cosmos_health']=client.health_check()
             pool=ThreadPoolExecutor(max_workers=1)
         result['timeline_time_codes_per_second']=timeline.get_time_codes_per_second()
-        start_wall=time.monotonic();turn_target=None;navigation_progress=None;app_updates=0
+        start_wall=time.monotonic();turn_target=None;navigation_progress=None;settling_key=None;app_updates=0
         latest_overview=None
         def publish_patrol(native_status='running',error=None):
             if patrol is None:return
@@ -341,10 +341,12 @@ def main():
                             command[0]=.2
                         progress=math.dist(dp[:2],target[:2])+.3*abs(angle_error(target[2],dp[3]))
                         key=(phase,patrol.aisle_id)
+                        at_arrival=settling_arrival(planar(dp),target,config.get('view_tolerance_m',.15),settling_key==key)
+                        settling_key=key if at_arrival else None
                         if navigation_progress is None or navigation_progress[0]!=key:navigation_progress=(key,progress,t)
                         elif progress<navigation_progress[1]-.02:navigation_progress=(key,progress,t)
-                        elif not arrival(planar(dp),target) and t-navigation_progress[2]>20:raise RuntimeError('Go2 patrol made no position/heading progress for 20 seconds')
-                        if arrival(planar(dp),target,tolerance=config.get('view_tolerance_m',.15)):
+                        elif not at_arrival and t-navigation_progress[2]>20:raise RuntimeError('Go2 patrol made no position/heading progress for 20 seconds')
+                        if at_arrival:
                             command[:]=[0,0,0]
                             settled=parking_ready(trajectory,target,tolerance=config.get('view_tolerance_m',.15))
                             previous=patrol.phase;patrol.advance(planar(dp),time.time(),settled=settled)

@@ -1,0 +1,16 @@
+{
+  "gallery_url": "https://proxi666.github.io/go2-warehouse-patrol/",
+  "status": "passed",
+  "videos_checked": 6,
+  "checks": [
+    "Loaded video metadata and decoded dimensions",
+    "Played each video and observed advancing currentTime",
+    "Sought near the end of each recording",
+    "Mobile viewport checked for horizontal overflow",
+    "Live MP4 response Content-Type verified as video/mp4"
+  ],
+  "browser_gpu_disabled": true,
+  "page_errors": [],
+  "browser_evidence_sha256": "d49e5c821e7e6719e9c074fe373ec1c7d2358739516dd1bf284e7d1a24957d5e",
+  "original_recordings_unchanged": true
+}

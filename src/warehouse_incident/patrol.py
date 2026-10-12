@@ -7,6 +7,15 @@ from .core import Assessment, Observation, _identifier, _number, _vector
 from .runtime_gates import arrival
 
 
+def settling_arrival(pose, target, tolerance, settling):
+    """Enter a tighter stop region; retain the original acceptance on drift.
+
+    This prevents stop/move cycling at the outer arrival boundary. The measured
+    dwell, speed and final observation gates still use their original limits.
+    """
+    return arrival(pose, target, tolerance=tolerance if settling else .8*tolerance)
+
+
 class Patrol:
     """The runner owns localization, physical settling, inference, and time.
 

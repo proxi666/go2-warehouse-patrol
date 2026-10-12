@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "native_attempt": "rtx5090-patrol-002",
+  "sim_seconds": 147.0299967136234,
+  "wall_seconds": 91.22618641900044,
+  "independent_verification": "passed",
+  "metrics": {
+    "prompt_sha256": "f2732b4cd2ccc0355c92686f035ce6170ef18e5361f6b9c11f1451e92f679864",
+    "aisles": {
+      "aisle-1": "clear",
+      "aisle-2": "clear",
+      "aisle-3": "obstructed"
+    },
+    "observations": 4,
+    "requests": 4,
+    "trajectory_rows": 1226,
+    "camera_frames": 701,
+    "minimum_up": 0.9941949017965216,
+    "minimum_height_m": 0.2654377222061157,
+    "parking_ready": true
+  },
+  "cleanup_errors": [],
+  "gpu_memory": {
+    "returncode": 0,
+    "samples": 194,
+    "peak_used_mib": 17818,
+    "minimum_free_mib": 14286,
+    "total_mib": 32607
+  },
+  "cpu_tests": 150,
+  "cpu_test_log_sha256": "ff1a914579a98ea0dfcd01a1a4e3c3cdf5570be59b13573f0bfbe40e08870a88",
+  "scene_sha256": "55b74b84915736cb350c06a31425d7cc57ac3cc43665f0ee88f47894bd17f153",
+  "policy_sha256": "b496c62b4ecd9ed0c58f867b85198017e57e2ba84315a3d7c8a41f1e621e930d",
+  "native_result_sha256": "fc926c65b69b1427de936c609af22eeae700a79796d352b9c500ea9bf2c81449",
+  "verification_sha256": "c6ba4bb46976a0dc4d38213ecf92fa55e1876184d6700ea41a41d04a2d973ba3",
+  "source_sha256": {
+    "scripts/build_clean_patrol_scene.py": "0a9ff272331d210d49ac6cb081787f12fe63c2174b5c8612368c8ae1fa0ea046",
+    "scripts/verify_patrol.py": "04123d45aa1c64f3c762b7c188105191c5b23d90d6ad6c6b069fbd686ae6c1d5",
+    "scripts/fetch_warehouse_shell.py": "d91b6ec57bb16e67be7cfb17ced3ccbc11c1ec75549b2c053210bd795d15af9f",
+    "scripts/floor_markings.py": "536b4e2c196da65eb7f26e738898c3c8a79a29a094928a2486221e5c84623830",
+    "scripts/run_native.py": "f396ef59f0cab5281c68abfe91546ffb53f2c953970e645cd1bf4d26b4775e14",
+    "scripts/build_patrol_scene.py": "15cae158706ef053b42b3e0661036b347b72c50403554cab104df9377c0f3f07",
+    "scripts/dashboard_server.py": "41c173e971c7af2354821d57b6e5cc68330a252476fe1ad0e174ba2a2c55ebb4",
+    "scripts/validate_assets.py": "73a485c5b062c28000c0cb8987989dadee9f431e4e296b97fe9fd980c7eb1941",
+    "scripts/build_scene.py": "bf6980bd878bcc2bba8d29e5e5c98d55d5772b06908b25c536238a2a65455b52",
+    "scripts/fetch_published_go2.py": "90272d383ec09b06f7503b18e2f272d5816b3665c961c331c788fbe2be24d2ae",
+    "scripts/render_third_person.py": "3276b1808e5e8151997d74de9b870e58bd9960d28618632f470b16a6f32336f9",
+    "scripts/fetch_training_go2.py": "becc64300a20b8b5ef202c9d71fc237c9b8710cdf9703e8e0960d88c63522761",
+    "scripts/fetch_go2.py": "7d0680f932c852ac4cb52d087ba74405f4d6b5a8426314bf86849c1150dbdc83",
+    "scripts/build_enclosed_patrol_scene.py": "5146880c0f6722f95330490676832f7c9b65badb3bbfa58aa48a0e46c6cc6a14",
+    "scripts/export_published_go2.py": "735f2adca0b361a7d21deba6a787bb6dc0c9d9c249813daf36341526b059a4c9",
+    "scripts/verify_attempt.py": "4fc1d88262fc8588449f6ef928de0887fc9a075f003781e9440e6db41d37d588",
+    "scripts/cosmos_server.py": "78ede5d072f01ad10d2e8bb64efcbba6ddcf45070e2fad3799130fd5bfb26144",
+    "src/warehouse_incident/__init__.py": "3baff7647ef833b0427ca85fd3d8b9f67e87bc569ee3a1c61cc429569644e050",
+    "src/warehouse_incident/runtime_gates.py": "a1ad7c8e11ddf970e4eb1662607a23644e0420b5cf580af320f68e1875c2b83c",
+    "src/warehouse_incident/follow_camera.py": "384149c117e0d6a0232e6d1b45ab213eb492a30da6eaa87a4a755dbaeb72f8bd",
+    "src/warehouse_incident/cosmos.py": "7fb5a6312f45b470d68b86daf9b8a387503f77d643c67aee08b8b77ab10f415a",
+    "src/warehouse_incident/core.py": "92a3ee768ed060eab223a2fc1955d856176799c7978a313c55f5ad59b6a4690f",
+    "src/warehouse_incident/actuator.py": "e32f6277589a853178adb8f1b3accb12b106379ec72c4e9e600119d95fa91c75",
+    "src/warehouse_incident/patrol.py": "1ba43e39f7cf562d763812321a181c30d850da54d67118bd3fadde8dce634a3f",
+    "src/warehouse_incident/viewport_memory.py": "8b35aa51d58862d669c836720045f5b184dd3f5ec54c77df1545161c681d253e",
+    "config/patrol.json": "ecb762cb87dcf6d2352c37926379edb764ce387d6629cf6ad1683ebd9b291ec6",
+    "config/mission.json": "2b96eb1c0dd430015fa2dc9ce96f4033645cbd023097031e3bdfbef7c6270ed9"
+  },
+  "model_runtime": {
+    "torch": "2.11.0+cu130",
+    "transformers": "5.14.1",
+    "pillow": "12.3.0"
+  },
+  "control_fix": "Enter settling inside 80% of the existing arrival tolerance; hold zero command through drift within the original tolerance. Position, heading, dwell, speed, freshness and verification gates remain unchanged.",
+  "preserved_failed_attempt": "rtx5090-patrol-001 stopped at the first FACE_FORWARD waypoint due to stop/move cycling near its arrival boundary. Original evidence remains on the isolated qualification host.",
+  "limitations": [
+    "One staged simulated scenario; no general perception accuracy or physical-robot deployment proof.",
+    "This rerun includes an arrival-control fix and is not a paired GPU performance benchmark.",
+    "Existing README videos remain the previously qualified laptop recordings."
+  ]
+}
