@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "warehouse-incident-poc"
+version = "0.1.0"
+requires-python = ">=3.10"
+description = "Go2 warehouse patrol and Cosmos visual incident assessment in Isaac Sim"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]

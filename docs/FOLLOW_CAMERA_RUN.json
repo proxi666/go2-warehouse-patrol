@@ -1,0 +1,40 @@
+{
+  "native_attempt": "follow-camera-001",
+  "status": "passed",
+  "sim_seconds": 121.7099972795695,
+  "wall_seconds": 222.82529025500116,
+  "cleanup_errors": [],
+  "independent_verification": "passed",
+  "metrics": {
+    "prompt_sha256": "f2732b4cd2ccc0355c92686f035ce6170ef18e5361f6b9c11f1451e92f679864",
+    "aisles": {
+      "aisle-1": "clear",
+      "aisle-2": "clear",
+      "aisle-3": "obstructed"
+    },
+    "observations": 4,
+    "requests": 4,
+    "trajectory_rows": 1015,
+    "camera_frames": 119,
+    "minimum_up": 0.9927035870096436,
+    "minimum_height_m": 0.2352377474308014,
+    "parking_ready": true
+  },
+  "third_person": {
+    "status": "captured and reviewed",
+    "cpu_geometry_tested": true,
+    "no_synthetic_replacement": true,
+    "native_attempt": "follow-camera-001",
+    "independent_patrol_verification": "passed",
+    "visual_review": "Decoded video samples at 4s, 13s and 21s; follow view, carton approach and return visible. Some paws near frame boundary. Not exhaustive per-frame occlusion validation."
+  },
+  "cpu_tests": {
+    "count": 135,
+    "status": "passed",
+    "gpu_disabled": true,
+    "note": "First suite invocation used a model Python without USD bindings and failed; preserved separately. Correct USD interpreter rerun passed."
+  },
+  "result_sha256": "6e2ed19dc436eab674875ad2ad697a554929ebc2f1ae0b56622ffed022250221",
+  "verification_sha256": "f718be888cdc4bc33f789c3eec978840eefdc73a21cf375cb61a34521cd0800b",
+  "cpu_log_sha256": "b37efb5e02d32ee4845dfeac55e56c56682e282a636ad4bc367069c05480802d"
+}

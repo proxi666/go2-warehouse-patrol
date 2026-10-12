@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "attempt": "patrol-v49-09",
+  "scene_revision": "V49",
+  "hardware": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "policy": "Unchanged published pretrained Go2 policy; no training",
+  "classification": {
+    "aisle-1": "clear",
+    "aisle-2": "clear",
+    "aisle-3": "obstructed"
+  },
+  "alerts": [
+    "Object detected in aisle 3. Kindly clear it."
+  ],
+  "sim_seconds": 113.54999746195972,
+  "cpu_tests_passed": 126,
+  "limits": [
+    "One fixed simulated carton scenario; no general perception accuracy claim",
+    "Known simulator poses and ideal raised virtual camera",
+    "Clear statuses are historical camera findings; stale labels retained",
+    "Carton SimReady basic/rigid/PhysX/composition pass; full profile fails grasp guidance and omitted naming checks are not passes",
+    "AMR route unchanged"
+  ]
+}

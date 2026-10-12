@@ -1,0 +1,112 @@
+{
+  "revision": "V43",
+  "physics_dt": 0.005,
+  "render_dt": 0.02,
+  "amr_start": [
+    -5,
+    15,
+    0.05
+  ],
+  "dog_start": [
+    -5,
+    13.8,
+    0.5
+  ],
+  "patrol_view": [
+    -2.5,
+    14.2,
+    0.31
+  ],
+  "inspect_view": [
+    -1.3,
+    14.4,
+    0.43
+  ],
+  "dog_park": [
+    -5,
+    13.8,
+    0
+  ],
+  "nodes": {
+    "start": [
+      -5,
+      15
+    ],
+    "west": [
+      -2.5,
+      15
+    ],
+    "east": [
+      2.5,
+      15
+    ],
+    "delivery": [
+      5,
+      15
+    ],
+    "northwest": [
+      -2.5,
+      19
+    ],
+    "northeast": [
+      2.5,
+      19
+    ]
+  },
+  "edges": [
+    [
+      "start",
+      "west",
+      2.5
+    ],
+    [
+      "west",
+      "east",
+      5
+    ],
+    [
+      "east",
+      "delivery",
+      2.5
+    ],
+    [
+      "west",
+      "northwest",
+      4
+    ],
+    [
+      "northwest",
+      "northeast",
+      5
+    ],
+    [
+      "northeast",
+      "east",
+      4
+    ]
+  ],
+  "inspected_edge": "main_aisle",
+  "edge_pairs": {
+    "main_aisle": [
+      "east",
+      "west"
+    ]
+  },
+  "cosmos_endpoint": "http://127.0.0.1:8124/v1/chat/completions",
+  "cosmos_model": "nvidia/Cosmos-Reason2-2B",
+  "cosmos_revision": "9ce19a195e423419c349abfc86fd07178b230561",
+  "decision_max_age_s": 120,
+  "camera_resolution": [
+    640,
+    360
+  ],
+  "carton_size": [
+    0.8,
+    1.2,
+    0.65
+  ],
+  "carton_mass_kg": 3,
+  "carton_mass_source": "Explicit PoC test-fixture assumption; not a measured physical carton",
+  "goal_tolerance_m": 0.15,
+  "camera_focal_mm": 8
+}

@@ -1,0 +1,60 @@
+{
+  "revision": "V53",
+  "scene": "scene/WarehousePatrol_V53.usd",
+  "scene_sha256": "8970a73da0f6343293bf0bbff6d5f9fa3d9891e6562e5410c16557eb3502f9fa",
+  "bytes": 23917931,
+  "source": "NVIDIA Isaac Sim6.0 Simple_Warehouse/full_warehouse.usd structural shell; existing SimReady rack/box geometry and Go2 retained",
+  "composition": {
+    "revision": "V53",
+    "status": "passed",
+    "floor_count": 1,
+    "external_asset_attributes": 0,
+    "external_usd_layers": 0,
+    "broken_material_targets": 0,
+    "robot_articulations": 1,
+    "sha256": "8970a73da0f6343293bf0bbff6d5f9fa3d9891e6562e5410c16557eb3502f9fa"
+  },
+  "source_modifications": "Keep genuine floor,walls,roof,supports andfixtures; omit unrelated shelves/forklifts, merge floor tiles, align retained roof tiles; simplified preview materials",
+  "native": {
+    "attempt": "enclosed-v53-001",
+    "status": "passed",
+    "sim_seconds": 108.62999757193029,
+    "wall_seconds": 110.11314295099874,
+    "cleanup_errors": [],
+    "independent_verification": "passed",
+    "metrics": {
+      "prompt_sha256": "f2732b4cd2ccc0355c92686f035ce6170ef18e5361f6b9c11f1451e92f679864",
+      "aisles": {
+        "aisle-1": "clear",
+        "aisle-2": "clear",
+        "aisle-3": "obstructed"
+      },
+      "observations": 4,
+      "requests": 4,
+      "trajectory_rows": 906,
+      "camera_frames": 106,
+      "minimum_up": 0.9945244958466621,
+      "minimum_height_m": 0.2532772421836853,
+      "parking_ready": true
+    }
+  },
+  "render_settings": {
+    "/rtx/post/aa/op": 3,
+    "/rtx/post/dlss/execMode": 2,
+    "/rtx/post/dof/enabled": false,
+    "/rtx/post/motionblur/enabled": false
+  },
+  "viewport_resolution": [
+    1280,
+    720
+  ],
+  "viewport_scale": 1.0,
+  "cpu_tests_passed": 146,
+  "simready_scope": "Selected fixture features checked previously; no full world certification claim",
+  "evidence_sha256": {
+    "native": "7781382e767cf2a0bb40fc0d422715303efe0690a53121f86ddaf1865f0c8b73",
+    "independent": "b57802493e8ebe8b660342ca79564cf9cc51b37cd297bef09117867b5bc9b0f2",
+    "cpu_tests": "71343cd2303e3052d62eb9033d41f187c9c085210316edb833135260498a8e49"
+  },
+  "preservation": "Earlier revisions and all three existing MP4s unchanged"
+}

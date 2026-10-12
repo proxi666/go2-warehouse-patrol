@@ -1,0 +1,72 @@
+{
+  "revision": "V52",
+  "scene": "scene/WarehousePatrol_V52.usd",
+  "stage_sha256": "7fb6c5b340bbdc6a73494d3bb0d44b46736ca22e0f2beb7eda5296af6f5dc351",
+  "bytes": 23204305,
+  "composition": {
+    "floor_count": 1,
+    "rack_rows": 4,
+    "aisles": 3,
+    "robot_articulations": 1,
+    "robot_rigid_bodies": 19,
+    "dynamic_incident_mass_kg": 3,
+    "active_external_asset_attributes": 0,
+    "external_usd_layers": 0,
+    "broken_material_targets": 0,
+    "materials": "Simplified preview shaders; original library geometry retained"
+  },
+  "cpu_tests": {
+    "passed": 143,
+    "gpu_disabled": true
+  },
+  "native": {
+    "attempt": "clean-v52-001",
+    "status": "passed",
+    "simulation_seconds": 108.14999758265913,
+    "wall_seconds": 93.01897929000552,
+    "cleanup_errors": [],
+    "independent_verification": "passed",
+    "metrics": {
+      "prompt_sha256": "f2732b4cd2ccc0355c92686f035ce6170ef18e5361f6b9c11f1451e92f679864",
+      "aisles": {
+        "aisle-1": "clear",
+        "aisle-2": "clear",
+        "aisle-3": "obstructed"
+      },
+      "observations": 4,
+      "requests": 4,
+      "trajectory_rows": 902,
+      "camera_frames": 106,
+      "minimum_up": 0.9944741579416961,
+      "minimum_height_m": 0.2598196268081665,
+      "parking_ready": true
+    }
+  },
+  "simready": {
+    "foundation_commit": "0ed0dfbc539c9de99289771bd6848effe3ef5779",
+    "selected_incident_features": "Minimal 1.0.1 and PhysX rigid-body 0.3.0 passed on separately generated identical fixture geometry",
+    "official_full_prop_profile": "Fails missing grasp guide GSP.001; optional multibody not applicable to single fixture",
+    "omitted_checks": [
+      "NP.002",
+      "NP.003",
+      "NP.004",
+      "NP.005",
+      "NP.006",
+      "NP.007",
+      "NP.008"
+    ],
+    "omission_reason": "Installed validator schema incompatibility; omitted checks are not passes",
+    "assembly_certification": false
+  },
+  "evidence_sha256": {
+    "native_result": "2af175913c6099153a5484c5502ca6619b5f7974e559348533d4017fbc66b6d7",
+    "independent_verification": "2ebf240dc3ce07444bc43bd66bee2194fa8dd88a1cbf013055f7c975c7ed8f75",
+    "static_audit": "d6cde8e24d1fb72364e3b7ecc734d673d9842328e1845806a9cf0f9bccbb54fc",
+    "cpu_tests": "50dadb1b9480df9332d01dbd0f48f2f6c4c6e05c1bf29fe6dbbd81a6c6fb358c"
+  },
+  "preserved_revisions": [
+    "V49 original world",
+    "V50 failed hidden collider/material audit",
+    "V51 superseded binding repair and intentionally interrupted runtime"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "videos": [
+    {
+      "file": "warehouse-patrol.mp4",
+      "sha256": "ec5e9154fe6e755dd11078e2dfd1dfd3bacc0dce35bb269989d44de6fa588870",
+      "source": "evidence/patrol-qualified-02/warehouse-aisle-patrol.mp4",
+      "description": "Current V49 patrol, overhead plus actual body camera",
+      "media": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 810
+          }
+        ],
+        "format": {
+          "duration": "22.760000"
+        }
+      },
+      "playback": "5x simulation speed; actual saved frames; no interpolation"
+    },
+    {
+      "file": "amr-investigation-legacy.mp4",
+      "sha256": "0c7a139c4938e5214c7cd77eeb4836b6013231abbf917b23bf55f9df4ceeb121",
+      "source": "evidence/demo-qualified-01/warehouse-incident-demo.mp4",
+      "description": "Earlier AMR investigation variant, fixed external view",
+      "media": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 640,
+            "height": 360
+          }
+        ],
+        "format": {
+          "duration": "19.000000"
+        }
+      },
+      "playback": "5x simulation speed; actual saved frames; no interpolation"
+    },
+    {
+      "file": "third-person-follow.mp4",
+      "sha256": "a2b51fa07e48d9c569a84d83957e62a8019aa9426e1ffa75583818a7e44ac74d",
+      "source": "evidence/follow-camera-001/third-person-*.jpg",
+      "description": "Actual following perspective camera; independent patrol verification passed and selected video frames visually reviewed",
+      "media": {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "duration_s": 24.36
+      },
+      "playback": "5x simulation time; missing seconds hold preceding actual frame; no motion interpolation",
+      "frames": 119,
+      "native_result_sha256": "6e2ed19dc436eab674875ad2ad697a554929ebc2f1ae0b56622ffed022250221",
+      "independent_verification_sha256": "f718be888cdc4bc33f789c3eec978840eefdc73a21cf375cb61a34521cd0800b"
+    }
+  ],
+  "third_person": {
+    "status": "captured and reviewed",
+    "cpu_geometry_tested": true,
+    "no_synthetic_replacement": true,
+    "native_attempt": "follow-camera-001",
+    "independent_patrol_verification": "passed",
+    "visual_review": "Decoded video samples at 4s, 13s and 21s; follow view, carton approach and return visible. Some paws near frame boundary. Not exhaustive per-frame occlusion validation."
+  },
+  "clean_scene_images": [
+    {
+      "file": "clean-scene-overview.jpg",
+      "source": "evidence/clean-v52-001/observer-0018.jpg",
+      "sha256": "8b6bd825d7e72de3d87683cdfe28d26635cc59ecad6e6bee4cf423d5525a7765"
+    },
+    {
+      "file": "clean-scene-follow.jpg",
+      "source": "evidence/clean-v52-001/third-person-0060.jpg",
+      "sha256": "9a0518d084b686ce62e5e02447590d0af19c6c809b0a1b0d91fbace7cdd08606"
+    }
+  ],
+  "enclosed_scene_images": [
+    {
+      "file": "enclosed-warehouse-interior.png",
+      "source": "evidence/enclosed-v53-interior-001/quality.png",
+      "camera": "/World/OverviewCamera",
+      "sha256": "225494f5b29c9f5296d6d1da1380422ec7ac1d6566dc89f382301192633758c6"
+    },
+    {
+      "file": "enclosed-warehouse-follow.jpg",
+      "source": "evidence/enclosed-v53-001/third-person-0060.jpg",
+      "sha256": "d87399c2453cc513eaa472724ecf9208e11c4993babb6149cc8314d275779eb0"
+    }
+  ],
+  "latest_showcase": {
+    "revision": "V55",
+    "videos": [
+      {
+        "file": "warehouse-patrol-v55.mp4",
+        "sha256": "d56d9fa6439a8226d1fde34209b92173cbdf5984618a71d4578dad93d74801c2",
+        "source_attempt": "showcase-v55-002",
+        "actual_frames": 844,
+        "media": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1280,
+              "height": 400
+            }
+          ],
+          "format": {
+            "duration": "35.480000"
+          }
+        },
+        "playback": "5x simulation time",
+        "no_motion_interpolation": true,
+        "native_result_sha256": "94387c71a3932b6295530a5ce9f079884d01b8be2dc5d2352293425159bd8c0c",
+        "independent_verification_sha256": "cb49b6acb82f209ad7e1b00e56107f7df9199a593a8c16805f8b1f43495a1d6b",
+        "input_manifest_sha256": "a9e564f41c5124cd3894cfdf19aaa5c20deeeedf4e44fdeaa4dcc52e47ef9b5b"
+      },
+      {
+        "file": "third-person-v55.mp4",
+        "sha256": "8c409c6f6961c4002ca9142f8f24984e24840cd42ff170b3c65e06e7b22cf485",
+        "source_attempt": "showcase-v55-002",
+        "actual_frames": 844,
+        "media": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 960,
+              "height": 540
+            }
+          ],
+          "format": {
+            "duration": "35.480000"
+          }
+        },
+        "playback": "5x simulation time",
+        "no_motion_interpolation": true,
+        "native_result_sha256": "94387c71a3932b6295530a5ce9f079884d01b8be2dc5d2352293425159bd8c0c",
+        "independent_verification_sha256": "cb49b6acb82f209ad7e1b00e56107f7df9199a593a8c16805f8b1f43495a1d6b",
+        "input_manifest_sha256": "46d1cdfe6e37e981b59c6e3be735b1a7f3fb638ec4d516aee9a998cb6263235c"
+      },
+      {
+        "file": "dashboard-v55.mp4",
+        "sha256": "34c1b2f3fd39dfe65a1508e64411ac12283f96cde4e493568a6a69ce5463bf3c",
+        "source_attempt": "showcase-v55-002",
+        "actual_frames": 197,
+        "media": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1600,
+              "height": 1150
+            }
+          ],
+          "format": {
+            "duration": "41.720000"
+          }
+        },
+        "playback": "5x wall-clock time",
+        "no_motion_interpolation": true,
+        "native_result_sha256": "94387c71a3932b6295530a5ce9f079884d01b8be2dc5d2352293425159bd8c0c",
+        "independent_verification_sha256": "cb49b6acb82f209ad7e1b00e56107f7df9199a593a8c16805f8b1f43495a1d6b",
+        "input_manifest_sha256": "a9e564f41c5124cd3894cfdf19aaa5c20deeeedf4e44fdeaa4dcc52e47ef9b5b"
+      }
+    ],
+    "browser_errors": [],
+    "dashboard_capture": "Actual local webpage screenshots throughout patrol, then both saved camera dialogs. Browser GPU disabled.",
+    "visual_review": "Decoded paired view at23s, follow view at22s/34s, dashboard notice at30s and second actual camera dialog at40s. Patrol, carton approach, floor markings, operator notice and parking visible. Some paws approach the follow-frame boundary; no exhaustive per-frame framing claim.",
+    "scene_sha256": "55b74b84915736cb350c06a31425d7cc57ac3cc43665f0ee88f47894bd17f153"
+  }
+}

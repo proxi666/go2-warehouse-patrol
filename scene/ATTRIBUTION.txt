@@ -1,0 +1,1 @@
+Rack and cardboard box geometry: NVIDIA SimReady library, CC BY 4.0; source identifiers retained in BUILD_MANIFEST.json. Material bindings simplified for this PoC. Go2: pinned NVIDIA Isaac Lab Unitree asset; upstream distribution terms apply.

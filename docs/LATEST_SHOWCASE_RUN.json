@@ -1,0 +1,89 @@
+{
+  "revision": "V55",
+  "native_attempt": "showcase-v55-002",
+  "status": "passed",
+  "independent_verification": "passed",
+  "sim_seconds": 177.26999603770673,
+  "wall_seconds": 169.48158652099664,
+  "aisle_statuses": [
+    {
+      "aisle": "aisle-1",
+      "status": "clear",
+      "actual_views": 1
+    },
+    {
+      "aisle": "aisle-2",
+      "status": "clear",
+      "actual_views": 1
+    },
+    {
+      "aisle": "aisle-3",
+      "status": "obstructed",
+      "actual_views": 2
+    }
+  ],
+  "cleanup_errors": [],
+  "cpu_tests": 149,
+  "cpu_test_log_sha256": "dd1d1fc1589069759f4a6e734d7a7e2ee2c2ebfb62263308936df13555c31002",
+  "native_result_sha256": "94387c71a3932b6295530a5ce9f079884d01b8be2dc5d2352293425159bd8c0c",
+  "independent_verification_sha256": "cb49b6acb82f209ad7e1b00e56107f7df9199a593a8c16805f8b1f43495a1d6b",
+  "stage_sha256": "55b74b84915736cb350c06a31425d7cc57ac3cc43665f0ee88f47894bd17f153",
+  "rendering": {
+    "mode": "headless",
+    "dlss": "Quality",
+    "inspection": [
+      640,
+      360
+    ],
+    "overview": [
+      640,
+      360
+    ],
+    "follow": [
+      960,
+      540
+    ],
+    "capture_hz": 5,
+    "motion_interpolation": false
+  },
+  "gpu_memory": {
+    "returncode": 0,
+    "samples": 353,
+    "peak_used_mib": 7207,
+    "minimum_free_mib": 501,
+    "total_mib": 8151
+  },
+  "dashboard": {
+    "url": "http://127.0.0.1:8126/",
+    "viewport": {
+      "width": 1600,
+      "height": 1150
+    },
+    "screenshots": 197,
+    "page_errors": [],
+    "source": "Actual local live dashboard; no mocked state; GPU disabled"
+  },
+  "limitations": [
+    "One staged simulation scenario; no general perception-accuracy estimate or physical deployment proof.",
+    "GPU memory measurements cover this headless recording with Cosmos on CUDA; maximized GUI patrol completion remains unverified.",
+    "Full SimReady certification not claimed."
+  ],
+  "preserved_attempts": [
+    {
+      "attempt": "showcase-v55-001",
+      "status": "failed before motion",
+      "reason": "Anonymous stage copy lost camera sensor path; private runtime file copy repaired next attempt."
+    },
+    {
+      "attempt": "long-aisles-v54-001",
+      "status": "stopped while paused",
+      "minimum_free_mib": 194
+    },
+    {
+      "revision": "V54",
+      "finding": "Kit/UI root-layer metadata changed hash; changed asset preserved separately; V55 rebuilt without rewriting V54 provenance."
+    }
+  ],
+  "served_frontend_verified": true,
+  "browser_page_errors": []
+}

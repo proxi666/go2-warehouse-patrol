@@ -1,0 +1,128 @@
+{
+  "revision": "V55",
+  "physics_dt": 0.005,
+  "render_dt": 0.02,
+  "dog_start": [
+    -6,
+    12.8,
+    0.5
+  ],
+  "park": [
+    -6,
+    12.8,
+    0
+  ],
+  "rack_x": [
+    -6,
+    -2,
+    2,
+    6
+  ],
+  "rack_y_modules": [
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40
+  ],
+  "aisles": [
+    {
+      "id": "aisle-1",
+      "label": "Aisle 1",
+      "mouth": [
+        -4,
+        12.3,
+        1.5707963267948966
+      ],
+      "confirm": [
+        -4,
+        18,
+        1.5707963267948966
+      ],
+      "entry": [
+        -4.5,
+        11.8,
+        0
+      ],
+      "forward": [
+        -3.5,
+        12.8,
+        0
+      ]
+    },
+    {
+      "id": "aisle-2",
+      "label": "Aisle 2",
+      "mouth": [
+        0,
+        12.3,
+        1.5707963267948966
+      ],
+      "confirm": [
+        0,
+        18,
+        1.5707963267948966
+      ],
+      "entry": [
+        -0.5,
+        11.8,
+        0
+      ],
+      "forward": [
+        0.5,
+        12.8,
+        0
+      ]
+    },
+    {
+      "id": "aisle-3",
+      "label": "Aisle 3",
+      "mouth": [
+        4,
+        12.3,
+        1.5707963267948966
+      ],
+      "confirm": [
+        4,
+        18,
+        1.5707963267948966
+      ],
+      "entry": [
+        3.5,
+        11.8,
+        0
+      ],
+      "forward": [
+        4.5,
+        12.8,
+        0
+      ]
+    }
+  ],
+  "incident_pose": [
+    4,
+    22,
+    0.328
+  ],
+  "max_age_s": 120,
+  "camera_focal_mm": 28,
+  "cosmos_endpoint": "http://127.0.0.1:8124/v1/chat/completions",
+  "cosmos_model": "nvidia/Cosmos-Reason2-2B",
+  "cosmos_revision": "9ce19a195e423419c349abfc86fd07178b230561",
+  "camera_mount_xyz": [
+    0.31,
+    0,
+    0.55
+  ],
+  "camera_pitch_rad": -0.18,
+  "view_tolerance_m": 0.25,
+  "stage_file": "assets/V55/V55.usd",
+  "rack_start_y": 14,
+  "rack_end_y": 43.5,
+  "rack_rear_partial": {
+    "center_y": 42.75,
+    "length_m": 1.5
+  }
+}

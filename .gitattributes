@@ -1,0 +1,12 @@
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+app text eol=lf
+*.mp4 binary
+*.jpg binary
+*.png binary
+
+*.usd binary
+
+# Preserve the upstream license notice byte-for-byte.
+scene/CC-BY-4.0.txt -whitespace
