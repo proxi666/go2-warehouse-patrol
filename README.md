@@ -23,23 +23,25 @@ The demonstrated setup runs Cosmos and RTX rendering on a laptop GPU, with simul
 
 ## Demo
 
+**[Play all demos in the browser](https://proxi666.github.io/go2-warehouse-patrol/).** Videos open in a gallery with native playback controls.
+
 ### Warehouse patrol
 
-[![Warehouse overview and robot inspection camera](media/warehouse-patrol-v55-preview.jpg)](media/warehouse-patrol-v55.mp4)
+[![Warehouse overview and robot inspection camera](media/warehouse-patrol-v55-preview.jpg)](https://proxi666.github.io/go2-warehouse-patrol/#patrol)
 
-An overview and the robot's inspection camera show the complete workflow: aisle checks, distant detection, closer confirmation, and return to parking. **[Watch the patrol](media/warehouse-patrol-v55.mp4).**
+An overview and the robot's inspection camera show the complete workflow: aisle checks, distant detection, closer confirmation, and return to parking. **[Watch the patrol](https://proxi666.github.io/go2-warehouse-patrol/#patrol).**
 
 ### Third-person view
 
-[![Go2 approaching a carton inside the warehouse aisle](media/third-person-v55-preview.jpg)](media/third-person-v55.mp4)
+[![Go2 approaching a carton inside the warehouse aisle](media/third-person-v55-preview.jpg)](https://proxi666.github.io/go2-warehouse-patrol/#follow)
 
-An actual simulator camera follows Go2's measured position and heading as it patrols and investigates. **[Watch the follow camera](media/third-person-v55.mp4).**
+An actual simulator camera follows Go2's measured position and heading as it patrols and investigates. **[Watch the follow camera](https://proxi666.github.io/go2-warehouse-patrol/#follow).**
 
 ### Dashboard walkthrough
 
-[![Warehouse inspection dashboard with aisle findings and an operator notice](media/dashboard-v55-preview.jpg)](media/dashboard-v55.mp4)
+[![Warehouse inspection dashboard with aisle findings and an operator notice](media/dashboard-v55-preview.jpg)](https://proxi666.github.io/go2-warehouse-patrol/#dashboard)
 
-The live webpage shows inspection progress, aisle status, the confirmed clearance notice, and both actual carton observations. **[Watch the dashboard](media/dashboard-v55.mp4).**
+The live webpage shows inspection progress, aisle status, the confirmed clearance notice, and both actual carton observations. **[Watch the dashboard](https://proxi666.github.io/go2-warehouse-patrol/#dashboard).**
 
 Videos use actual captured frames at **5× playback**: simulation time for robot footage and wall-clock time for the dashboard. No motion interpolation or mocked findings are used. [Media provenance](media/PROVENANCE.json).
 
@@ -97,9 +99,9 @@ Built using NVIDIA Isaac Sim, Isaac Lab, Cosmos, NVIDIA warehouse and SimReady a
 <details>
 <summary>Earlier demonstrations</summary>
 
-- [Earlier paired-camera patrol](media/warehouse-patrol.mp4)
-- [Earlier third-person patrol](media/third-person-follow.mp4)
-- [Original AMR investigation concept](media/amr-investigation-legacy.mp4)
+- [Earlier paired-camera patrol](https://proxi666.github.io/go2-warehouse-patrol/#earlier-patrol)
+- [Earlier third-person patrol](https://proxi666.github.io/go2-warehouse-patrol/#earlier-follow)
+- [Original AMR investigation concept](https://proxi666.github.io/go2-warehouse-patrol/#amr)
 
 These preserved recordings show earlier layouts and workflows.
 </details>

@@ -23,7 +23,7 @@ Publication uses only the personal token explicitly supplied for this task throu
 
 ## Videos
 
-README thumbnails link to the committed MP4s. They preserve the real recordings and work without fabricated GitHub attachment URLs. Native inline attachment players can be added later using actual uploaded-video URLs.
+README thumbnails open the GitHub Pages video gallery with native HTML video controls. GitHub's repository file viewer does not play committed MP4s. The original recordings remain committed and downloadable; the gallery serves them with video MIME types. No attachment URLs are fabricated.
 
 ## Scope
 
