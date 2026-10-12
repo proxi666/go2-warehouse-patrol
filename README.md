@@ -86,22 +86,6 @@ Follow [setup](docs/SETUP.md) to configure the simulator and Python environments
 
 Open **http://127.0.0.1:8126/**. Add `--no-headless` to the patrol command for a live Isaac Sim window. Headless recording reduces GPU memory demand. Use fresh attempt names for each run; existing evidence is preserved. [Rendering guidance](docs/RENDER_TROUBLESHOOTING.md).
 
-## Validation and scope
-
-The recorded demonstration completed all aisle inspections: two aisles clear, one obstruction confirmed from two camera views, an operator notice issued, and Go2 returned to parking. Independent evidence verification and the CPU test suite passed. [Recorded laptop results](docs/LATEST_SHOWCASE_RUN.json). A separate RTX 5090 run also passed independent verification after improving waypoint settling; see [remote GPU results](docs/REMOTE_GPU_RUN.json).
-
-This is a simulation PoC with known robot poses, an ideal virtual camera, and one staged obstruction. General perception accuracy and real-robot deployment remain unverified. Selected SimReady checks passed; full SimReady certification is not claimed.
-
 ## Attribution
 
 Built using NVIDIA Isaac Sim, Isaac Lab, Cosmos, NVIDIA warehouse and SimReady assets, and the Unitree Go2 simulation model. Upstream assets and models retain their own terms. See [third-party attribution](THIRD_PARTY.md) and the notices under [scene](scene/).
-
-<details>
-<summary>Earlier demonstrations</summary>
-
-- [Earlier paired-camera patrol](https://proxi666.github.io/go2-warehouse-patrol/#earlier-patrol)
-- [Earlier third-person patrol](https://proxi666.github.io/go2-warehouse-patrol/#earlier-follow)
-- [Original AMR investigation concept](https://proxi666.github.io/go2-warehouse-patrol/#amr)
-
-These preserved recordings show earlier layouts and workflows.
-</details>
